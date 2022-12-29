@@ -2,51 +2,104 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--        Font Awesome Icons -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/57998bc558.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles.css">
-        <title>Ryan Bui Projects</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Ryan Bui Portfolio</title>
     </head>
     
     <body>
-        <nav class="navbar">
-            <div class="homeButton">
-                <a href="index.html">
-                    <i class="fas fa-home fa-2x"></i>
-                </a>
-            </div>
-            <ul class="topnav" id="navbar-toggle">
-                <!-- <li>
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <div class="container-fluid">
+                <div class="homeButton">
+                    <a href="index.html">
+                        <i class="fas fa-home fa-2x"></i>
+                    </a>
+                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
-                </li> -->
-                <li>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-                <!--
-                <li>
-                    <a class="nav-link" href="RyanBuiResume.pdf" target="_blank">Resume</a>
-                </li>
-                -->
-                <li>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="dropdownLink">
-                    <a onclick="toggleDropdown()" href="javascript:void(0)">&#9776;</a>
-                </li>
-            </ul>
+                  </li>  
+                </ul>
+              </div>
+            </div>
         </nav>
         
         
         <div class="projects">
-            <h1 class="name-heading">Projects.</h1>
+            <h1 class="name-heading">Projects</h1>
             
             <div class="projectExamples"> 
                 <div class="project-objects">
                     <div class="project-box">
                         <div class="project-picture">
                             <div>
-                                <img src="images/The_Garage_Wall.png" alt="Project">
+                                <div>
+                                    <video controls muted width="300" height="250" controls>
+                                        <source src="videos/polyA.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                      </video>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="projectDescriptions">
+                            <h3>Baylor College of Medicine: PolyA Explorer</h3>
+                            <p>Worked with team to create a full stack web application using Angular, NodeJS, and
+                                MongoDB. This web application is used as a visualization tool that allows users to
+                                view different gene features relevant to alternative polyadenylation. Implemented the
+                                API calls to get data needed to graphically show different parts of a gene.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-objects">
+                    <div class="project-box">
+                        <div class="project-picture">
+                            <div>
+                                <video width="300" height="250" controls>
+                                    <source src="videos/arbos.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                  </video>
+                            </div>
+                        </div>
+                    
+                        <div class="projectDescriptions">
+                            <h3>Carpool App</h3>
+                            <p>Worked with team to create a carpool app for iOS using Swift, Xcode Storyboard, and Firebase(Firestore).
+                                Implemented driver dashboard to get data from firestore database and display table view.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-objects">
+                    <div class="project-box">
+                        <div class="project-picture">
+                            <div>
+                                <div>
+                                    <video width="300" height="250" controls>
+                                        <source src="videos/ar.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                      </video>
+                                </div>
 <!--
+    <img src="images/The_Garage_Wall.png" alt="Project">
                                 <div class="github">
                                     <a href="#" class="btn-light">
                                         <i class="fab fa-github"></i> GitHub
@@ -58,26 +111,36 @@
                     
                         <div class="projectDescriptions">
                             <h3>Augmented Reality App: Capital One + WalkStem</h3>
-                            <p>Created an augmented reality app for the iPad to teach visitors at the           Capital One Plano campus about STEM concepts.
-                                Used Unity and Vuforia to track pictures and displayed video about the image on top of
+                            <p>Created an augmented reality app for the iPad to teach visitors at the Capital One Plano Campus about STEM concepts.
+                                Used Unity (C#), and Vuforia to track pictures and displayed video about the image on top of
                                 picture.
-                                Displayed information panels correlating to the image tracked to provide the user
+                                Displayed information panels correlating to the image tracked and provided the user
                                 information about the person in the picture. 
                             </p>
                         </div>
                     </div>
                 </div>
-                
+                <div class="project-objects">
+                    <div class="project-box">
+                        <div class="project-picture">
+                            <div>
+                                <img src="images/clothsim.png" alt="Project">
+                            </div>
+                        </div>
+                    
+                        <div class="projectDescriptions">
+                            <h3>Cloth Simulation</h3>
+                            <p>Worked with team to create a 3D simulation of a cloth using C++ and OpenGL.
+                                Implemented cloth collision and intersection with a sphere 
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-objects">
                     <div class="project-box">
                         <div class="project-picture">
                             <div>
                                 <img src="images/drawingApp.png" alt="Project">
-                                <div class="github">
-                                    <a href="https://github.com/RyanLBui/Drawing-App" target="_blank" class="btn-light">
-                                        <i class="fab fa-github fa-2x"></i> GitHub
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     
@@ -95,11 +158,6 @@
                         <div class="project-picture">
                             <div>
                                 <img src="images/xna.png" alt="Project">
-                                <div class="github">
-                                    <a href="https://github.com/RyanLBui/XNA_RacingGame" target="_blank" class="btn-light">
-                                        <i class="fab fa-github fa-2x"></i> GitHub
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     
@@ -116,34 +174,7 @@
                     <div class="project-box">
                         <div class="project-picture">
                             <div>
-                                <img src="images/clothsim.png" alt="Project">
-                                <div class="github">
-                                    <a href="https://github.com/RyanLBui/ClothSim" target="_blank" class="btn-light">
-                                        <i class="fab fa-github fa-2x"></i> GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="projectDescriptions">
-                            <h3>Cloth Simulation</h3>
-                            <p>Worked with team to create a 3D simulation of a cloth using C++ and OpenGL.
-                                Implemented cloth collision and intersection with a sphere 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-objects">
-                    <div class="project-box">
-                        <div class="project-picture">
-                            <div>
                                 <img src="images/othello.png" alt="Project">
-                                <div class="github">
-                                    <a href="https://github.com/RyanLBui/Othello" target="_blank" class="btn-light">
-                                        <i class="fab fa-github fa-2x"></i> GitHub
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     
@@ -159,12 +190,5 @@
             </div>
         </div>
         
-<!--        link javascript     -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.0.min.js"
-    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-    crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="main.js"></script>
     </body>
 </html>

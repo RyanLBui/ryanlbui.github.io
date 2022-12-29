@@ -1,161 +1,85 @@
-html, body 
+body 
 {
-    height:100%;
-} 
+    background-image: url('images/whiteBackground.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
-body
+/* Navbar */
+.navbar-nav > li
 {
-/*    background-color: dimgray;*/
-    background-image: url(images/backgroundImage2.jpg);
-    background-size: 100% 100%;
-/*    background-repeat: no-repeat;*/
-    color: white;
-    height: 100%;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.nav-link
+{
+    font-size: 28px !important;
+    font-weight: bold;
+}
+
+i{
+    color: black;
+    margin-right: 20px;
 }
 
 .main
 {
-    overflow: hidden;
-}
-
-.navbar
-{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-.topnav
-{
-    margin-right: auto;
-    display: flex;
-    list-style: none;
-    font-size: 1.5rem;
-    padding: 1rem;
-    margin: 0;
-}
-
-.topnav li
-{
-    display: flex;
-    padding: 0 5rem;
-}
-
-.navbar .homeButton
-{
-    padding-left: 1rem;
-    padding: 1rem;
-}
-
-.topnav .dropdownLink
-{
-    display: none;
-}
-
-h1, h2, .icons
-{
-    margin-left: 20rem;
-}
-
-h1
-{
-    margin-top: 25rem;
-}
-
-.name-heading
-{
-    font-size: 6rem;
-}
-
-.small-heading
-{
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-a
-{
-    text-decoration: none;
-    color: white;
+    margin-top: 100px;
+    margin-left:100px;
 }
 
 .navbar a:hover
 {
-    color: lightseagreen;
+    color: rgb(5, 74, 250);
 }
 
-a .fab:hover
+.homeButton
+{
+    margin-left: 20px;
+}
+
+a .fas:hover
 {
     cursor: pointer;
     transform: scale(1.5);
-    color: white;
 }
 
-.icons a .fab
-{
-    padding: 0.8rem;
+a{
+    text-decoration: none !important;
 }
 
-/*-----------  About Page   --------  */
-
-.about h1
+a .fa-brands
 {
-    margin: auto;
-    margin-top: 10rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    font-size: 50px;
+    margin: 20px;
 }
 
-.about-info
+a .fa-brands:hover
 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-    font-size: 24px;
-    max-width: 900px;
+    cursor: pointer;
+    transform: scale(1.5);
 }
 
-.about-info p
+.main
 {
-    padding: 0 5rem;
-}
-/*-----------  Contact Page   --------  */
-.contact h1
-{
-    margin-left: 10rem;
-    margin-top: 10rem;
-    margin-bottom: 2rem;
-    font-size: 50px;
+    margin-left: 200px;
+    margin-top: 300px;
 }
 
-.contact-info
+.name-heading
 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    font-size: 20px;
-    margin: 0 10rem;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
-.contact-info div
+.small-heading-end
 {
-    width: 700px;
+    margin-bottom: 50px;
 }
 
-.contact-info h2
-{
-    margin-left: 0;
-    color: lightseagreen;
-}
-
-.contact .icons
-{
-    margin: 2rem 9rem;
+.heading{
+    text-decoration: underline;
 }
 
 /*-----------  Projects Page   --------  */
@@ -201,160 +125,41 @@ a .fab:hover
 
 .project-picture img
 {
+    border: 3px solid black;
     width: 300px;
     height: 300px;
 }
 
-/********Media Query ****************/
-@media (max-width: 1000px)
+/*
+.project-picture video
 {
-    .project-box
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .projectDescriptions
-    {
-        margin: 0 0rem;
-        font-size: 20px;
-    }
+    border: 3px solid black;
+}
+*/
+/*-----------  Contact Page   --------  */
+.contact h1
+{
+    margin-left: 150px;
+    font-size: 50px;
 }
 
-/********Media Query ****************/
-@media (max-width: 1400px)
+.contact-info
 {
-    .about-info p
-    {
-        padding: 0 2rem;
-    }
-    
-    .about-info
-    {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: auto;
-        font-size: 24px;
-        max-width: 900px;
-    }
-    
-    .contact-info
-    {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        font-size: 20px;
-        margin: 0 10rem;
-    }
-    
-    .contact h1
-    {
-        margin-left: 9rem;
-        margin-top: 10rem;
-        font-size: 50px;
-    }   
-    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 20px;
+    margin-left: 150px;
 }
 
-/********Media Query for mobile*/
-@media (max-width: 768px)
+.contact-info h2
 {
-    ul.topnav li a.nav-link
-    {
-        display: none;
-    }
-    
-    ul.topnav li.dropdownLink
-    {
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        padding-right: 25px;
-    }
-    
-    ul.topnav.responsive li.dropdownLink
-    {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-    }
-    
-    ul.topnav.responsive
-    {
-        flex-direction: column;
-        text-align: right;
-    }
-    
-    ul.topnav.responsive li
-    {
-        position: relative;
-        top: 30px;
-        right: 30px;
-    }
-    
-    ul.topnav.responsive li a.nav-link
-    {
-        display: flex;
-        line-height: 3;
-        align-items: center;
-        width: 100%;
-/*        background-color: #15001E;*/
-        padding: 0 2rem;
-        border-bottom: 10px blue;
-    }
-    
-    h1, h2, .icons
-    {
-    margin-left: 7rem;
-    }
-    
-/*    About Me */
-    .about-info p
-    {
-        padding: 0 2rem;
-    }
-    
-    
-    .about h1
-    {
-        margin: auto;
-        margin-top: 10rem;
-        margin-bottom: 3rem;
-        text-align: center;
-        font-size: 50px;
-    }
-    
-    .about-info
-    {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: auto;
-        font-size: 24px;
-        max-width: 900px;
-    }
-    
-    .project-box
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .projectDescriptions
-    {
-        margin: 0 0rem;
-        font-size: 20px;
-    }
-    
-    
+    margin-left: 0;
+    color: rgb(0, 13, 255);
 }
 
-
-
-
-
-
-
-
+.contact .icons
+{
+    margin-top: 50px;
+    margin-left: 150px;
+}
